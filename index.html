@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tovar Oldi-Sotdi Pravotkalar - Tahlil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #D2FF28;
+            --tech-green: #D2FF28;
+            --dark-bg: #1a1a1a;
+            --text-white: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.7);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(210, 255, 40, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(210, 255, 40, 0.05) 0%, transparent 40%);
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .slides-container {
+                width: 960px;
+                height: 1080px;
+                max-height: 95vh;
+                aspect-ratio: 960 / 1080;
+                border: 2px solid rgba(210, 255, 40, 0.3);
+                border-radius: 20px;
+                box-shadow: 0 0 100px rgba(0, 0, 0, 0.8), 0 0 30px rgba(210, 255, 40, 0.1);
+                margin: auto;
+                position: relative;
+                overflow: hidden;
+            }
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--primary-green);
+            margin: 0;
+            padding: 0;
+        }
+
+        .highlight {
+            color: var(--primary-green);
+            font-weight: 800;
+        }
+
+        .glass-box {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(210, 255, 40, 0.2);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            width: 100%;
+            max-width: 850px;
+        }
+
+        .section-header {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+        }
+
+        .topic-subheader {
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .calc-step {
+            background: rgba(210, 255, 40, 0.05);
+            border-left: 5px solid var(--primary-green);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+
+        .pravotka-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(210, 255, 40, 0.1);
+        }
+
+        .code-box {
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--primary-green);
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slides-container">
+        <!-- Slide 1: Intro -->
+        <div class="slide active" id="slide-1">
+            <div class="bg-shape bg-shape-1"></div>
+            <div class="section-header">3-BO'LIM TOVAR OLDI SOTDI OPERATSIYALARI</div>
+            <div class="section-header" style="font-size: 2rem; opacity: 0.8; margin-top: -10px;">20 Dars</div>
+            <h1 class="topic-subheader">Ikki yoqlama yozuv (Pravotkalar)<br>Tovar oldi sotdi</h1>
+            <div
+                style="height: 3px; width: 60px; background: var(--primary-green); margin: 25px auto; border-radius: 10px;">
+            </div>
+            <div class="glass-box" style="margin-top: 30px; text-align: center;">
+                <h3 style="font-size: 1.5rem; color: #fff;">Buxgalteriya o'tkazmalari va shotlar tavsifi</h3>
+            </div>
+            <div class="bg-shape bg-shape-2"></div>
+        </div>
+
+        <!-- Slide 2: Shotlar tavsifi 1 -->
+        <div class="slide" id="slide-2">
+            <h2>Shotlar tavsifi (Sotib olish)</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step">
+                    <strong class="highlight">4310 — Berilgan bo'naklar:</strong><br>
+                    Bu korxonaning <span class="highlight">aktivi</span> hisoblanadi. Siz pulni to'ladingiz, lekin tovar
+                    hali omboringizga kelib tushmagan.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">6010 — Mol yetkazib beruvchilar bilan hisob-kitoblar:</strong><br>
+                    Bu korxonaning <span class="highlight">majburiyati (kreditorlik qarzi)</span>. Tovar omborga kelib
+                    tushganida shakllanadi.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Shotlar tavsifi 2 -->
+        <div class="slide" id="slide-3">
+            <h2>Shotlar tavsifi (Sotish)</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step">
+                    <strong class="highlight">📈 9020 — Tovar sotishdan daromad (Tushum):</strong><br>
+                    Bu korxona uchun daromad. Tovar xaridorga sotilgan narxda (ustamasi bilan) aks etadi.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">📉 9120 — Sotilgan tovarlarning tannarxi (Xarajat):</strong><br>
+                    Bu korxona uchun chiqim. Tovar ombordagi tannarxi bilan xarajatga olib boriladi.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Shotlar tavsifi 3 -->
+        <div class="slide" id="slide-4">
+            <h2>Shotlar tavsifi (Avans va Debitor)</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step">
+                    <strong class="highlight">6310 — Olingan bo‘naklar (Avanslar):</strong><br>
+                    Bu korxonaning xaridor oldidagi <span class="highlight">majburiyati</span>. Pul keldi, lekin tovar
+                    hali berilmadi.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">4010 — Xaridorlar bilan hisob-kitoblar:</strong><br>
+                    Bu korxonaning <span class="highlight">aktivi (debitorlik qarzi)</span>. Tovar sotilganda
+                    xaridorning sizdan qarzi shakllanadi.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Tovar sotib olish pravotkalari -->
+        <div class="slide" id="slide-5">
+            <h2>📦 Tovar sotib olish</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="pravotka-row">
+                    <span>Ta'minotchiga avans berildi</span>
+                    <span class="code-box">4310 / 5110</span>
+                </div>
+                <div class="pravotka-row">
+                    <span>Tovar sotib olindi</span>
+                    <span class="code-box">2910 / 6010</span>
+                </div>
+                <div class="pravotka-row">
+                    <span>Avans hisobdan chiqarildi</span>
+                    <span class="code-box">6010 / 4310</span>
+                </div>
+                <div class="pravotka-row">
+                    <span>Ta'minotchiga qarz to'landi</span>
+                    <span class="code-box">6010 / 5110</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Tovar sotish pravotkalari -->
+        <div class="slide" id="slide-6">
+            <h2>💰 Tovar sotish</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="pravotka-row">
+                    <span>Xaridordan avans olindi</span>
+                    <span class="code-box">5110 / 6310</span>
+                </div>
+                <div class="pravotka-row">
+                    <span>Tan narx hisobga olindi</span>
+                    <span class="code-box">9120 / 2910</span>
+                </div>
+                <div class="pravotka-row">
+                    <span>Sotishdan daromad olindi</span>
+                    <span class="code-box">4010 / 9020</span>
+                </div>
+                <div class="pravotka-row">
+                    <span>Olingan avans hisobdan chiqarildi</span>
+                    <span class="code-box">6310 / 4010</span>
+                </div>
+                <div class="pravotka-row">
+                    <span>Debitorlik qarzi to'landi</span>
+                    <span class="code-box">5110 / 4010</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Darsdan olingan natijalar -->
+        <div class="slide" id="slide-7">
+            <h2>📊 Darsdan olingan natijalar</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step">
+                    <strong class="highlight">1. Aktiv va Majburiyat:</strong><br>
+                    Avanslar (4310 va 6310) ning aktiv yoki majburiyat ekanligini farqlashni o'rgandik.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">2. Sotib olish zanjiri:</strong><br>
+                    Avans berishdan to qarzni uzishgacha bo'lgan barcha bosqichli pravotkalarni o'zlashtirdik.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">3. Sotish va Tannarx:</strong><br>
+                    Daromad (9020) va unga mos tannarx (9120) o'rtasidagi bog'liqlikni tushundik.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">4. Debitorlik va Kreditorlik:</strong><br>
+                    Xaridorlar (4010) va ta'minotchilar (6010) bilan hisob-kitoblarni yuritishni o'rgandik.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Yakun -->
+        <div class="slide" id="slide-8">
+            <div class="bg-shape bg-shape-1" style="animation: pulse 3s infinite;"></div>
+            <div class="bg-shape bg-shape-2" style="animation: pulse 3s infinite reverse;"></div>
+            <h1 style="text-align: center; line-height: 1.2;">
+                O'SISHDAN<br>
+                <span
+                    style="color: var(--primary-green); -webkit-text-fill-color: var(--primary-green);">TO'XTAMANG!</span>
+                🚀
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--primary-green); margin-top: 20px; opacity: 0.6;">DARS TUGADI</p>
+            <canvas id="fireworks"
+                style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:-1; pointer-events:none;"></canvas>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="controls">
+        <div class="control-btn" onclick="prevSlide()">❮</div>
+        <div class="control-btn" onclick="nextSlide()">❯</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
